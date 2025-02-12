@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true, // Also helpful for compatibility
+      "jsx": "react-jsx",                   // Required for React 17+ JSX Transform,
+      "typeRoots": ["./node_modules/@types", "./src/types"]
+    }
+  }
