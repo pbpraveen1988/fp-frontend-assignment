@@ -1,7 +1,9 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "author": "PB Praveen Kumar",
+  "description": "A simple GitHub profile search application for a coding challenge",
   "dependencies": {
     "@heroicons/react": "^1.0.6",
     "@reduxjs/toolkit": "^2.5.1",
