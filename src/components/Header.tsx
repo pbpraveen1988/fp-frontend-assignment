@@ -5,7 +5,7 @@ const Header = () => {
   const location = useLocation();
 
   return (
-    <header className="bg-white shadow-md">
+    <header className="bg-white border-b border-gray-300">
       <div className="container mx-auto px-8">
         <nav className="flex justify-end space-x-8 h-16">
           <Link

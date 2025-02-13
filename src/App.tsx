@@ -10,7 +10,7 @@ function App() {
   return (
     <Provider store={store} children={
       <Router>
-        <div className="min-h-screen bg-gray-50">
+        <div className="min-h-screen bg-page-bg">
           <Header />
           <div className="container mx-auto py-8">
             <Routes>

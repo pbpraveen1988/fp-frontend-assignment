@@ -14,10 +14,10 @@ const History = () => {
       
       {searchHistory.length > 0 ? (
         <>
-          <div className="border border-gray-200 bg-gray-50">
+          <div className="border border-gray-200 bg-[#f9f9f9]">
             <div className="grid grid-cols-5 border-b">
-              <div className="text-sm text-gray-500 p-4 border-r col-span-2">Username</div>
-              <div className="text-sm text-gray-500 p-4 col-span-3">Profile</div>
+              <div className="text-sm text-gray-500 p-4 border-r col-span-2">Search Term</div>
+              <div className="text-sm text-gray-500 p-4 col-span-3">Search Results</div>
             </div>
 
             <div className="bg-white">

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, KeyboardEvent } from 'react';
 import { SearchIcon } from '@heroicons/react/outline';
 import GitHubProfile from '../components/GitHubProfile';
 import { useDispatch } from 'react-redux';
@@ -34,6 +34,12 @@ const Search = () => {
     setSearched(true);
   };
 
+  const handleKeyPress = (e: KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter' && username.trim()) {
+      handleSearch();
+    }
+  };
+
   return (
     <div className="max-w-lg mx-auto px-4">
       <h2 className="text-center text-xl mb-6">Search GitHub User</h2>
@@ -44,6 +50,7 @@ const Search = () => {
             type="text"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
+            onKeyPress={handleKeyPress}
             placeholder="Search GitHub User"
             className="w-full p-2 pl-10 border"
           />
