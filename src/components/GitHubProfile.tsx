@@ -17,7 +17,7 @@ const GitHubProfile: React.FC<GitHubProfileProps> = ({ user }) => {
         <div className="text-sm text-gray-500 mb-1">User Image</div>
         <img
           src={user.avatar_url}
-          alt="User avatar"
+          alt={user.name}
           className="w-24 h-24 border"
         />
       </div>
